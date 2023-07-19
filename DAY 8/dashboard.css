@@ -1,0 +1,123 @@
+html,body{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container{
+    padding: 75px 0;
+    margin: 0 auto;
+    width: 1140px;
+  }
+  
+  .name{
+    position: relative;
+    margin-bottom: 45px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 44px;
+    text-transform: uppercase;
+    color: #1e5861;
+    margin-right: 400px;
+  }
+  
+  .gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+  }
+  
+  .item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.5s ease;
+    
+    &:hover{
+      flex: 7;
+    }
+  }
+  
+  .item-1 { 
+    background-image: url('https://res.cloudinary.com/dtrytsho8/image/upload/v1689501385/tomas-petz-O8eo2BC1SOI-unsplash_ztzklr.jpg');
+  }
+  
+  .item-2 { 
+    background-image: url('https://res.cloudinary.com/dtrytsho8/image/upload/v1689501358/sandy-millar-S5pFhDxUXyw-unsplash_xeh2gy.jpg');
+  }
+  
+  .item-3 { 
+    background-image: url('https://res.cloudinary.com/dtrytsho8/image/upload/v1689501349/andrew-reshetov-XzEqlPQsLdI-unsplash_xzyyxe.jpg');
+  }
+  
+  .item-4 { 
+    background-image: url('https://res.cloudinary.com/dtrytsho8/image/upload/v1689501380/markus-spiske-OO89_95aUC0-unsplash_p5e0dx.jpg');
+  }
+  
+  .item-5 { 
+    background-image: url('https://res.cloudinary.com/dtrytsho8/image/upload/v1689501397/jose-betancourt-NHIP7M3EB9w-unsplash_ael2wh.jpg');
+  }
+  
+  .social{
+    position: absolute;
+    right: 35px;
+    bottom: 0;
+    
+    img{
+      display: block;
+      width: 32px;
+    }
+    
+  }   
+
+  .dashboard-header{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dashboard-links{
+
+    position: absolute;
+    right: 5rem;
+  }
+  .logbutton {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #feba33;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #feba33;
+  }
+  
+  .logbutton:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #feba33;
+    box-shadow: 4px 5px 17px -4px #feba33;
+  }
+  
+  .logbutton::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #feba33;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  .logbutton:hover::before {
+    width: 250%;
+  }
+  

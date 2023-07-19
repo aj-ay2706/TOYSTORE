@@ -1,0 +1,53 @@
+/* Portfolio.css */
+.portfolio-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+    margin-right:500px;
+
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter-buttons button {
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px;
+  }
+  
+  .filter-buttons button:hover {
+    background-color:black;
+  }
+  
+  .project-list {
+    display: flex;
+    
+    justify-content: space-between;
+    width:50px;
+    height:430px;
+
+  }
+  
+  .project-item {
+    flex: 0 0 calc(25% - 20px);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+  }
+  
